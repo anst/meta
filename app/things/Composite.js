@@ -4,12 +4,14 @@ function Composite(options) {
 	this.components = {};
 	for (key in options) {
 		if (_.isString(options[key])) {
-
+			components[key] = global.store.get(options[key]);
+		} else {
+			components[key] = options[key];
 		}
 	}
 }
 
-Composite.prototype.hasAction(action) {
+Composite.prototype.hasAction = function(action) {
 	for (key in components) {
 		if (components[key].hasAction(action)) {
 			return true;
@@ -18,7 +20,7 @@ Composite.prototype.hasAction(action) {
 	return false;
 }
 
-Composite.prototype.getAction(action) {
+Composite.prototype.getAction = function(action) {
 	for (key in components) {
 		if (components[key].hasAction(action)) {
 			return component[key].getAction(action);

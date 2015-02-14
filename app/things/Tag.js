@@ -3,15 +3,15 @@ function Tag(attributes, actions) {
 	this.actions = actions;
 }
 
-Tag.prototype.hasAction(action) {
+Tag.prototype.hasAction = function(action) {
 	return this.actions.hasProperty(action);
 }
 
-Tag.prototype.hasAttribute(attribute) {
+Tag.prototype.hasAttribute = function(attribute) {
 	return this.attributes.hasProperty(attribute);
 }
 
-Tag.prototype.getAction(action) {
+Tag.prototype.getAction = function(action) {
 	return this.actions[action];
 }
 

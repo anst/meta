@@ -34,7 +34,7 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="Wall" sketch:type="MSLayerGroup">
-            <rect id="Rectangle-2" fill="#BEBEBE" sketch:type="MSShapeGroup" x="0" y="0" width="64" height="64"></rect>
+            <rect id="Rectangle-2" fill="#9C9C9C" sketch:type="MSShapeGroup" x="0" y="0" width="64" height="64"></rect>
             <rect id="Rectangle-8" fill="#E6E6E6" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="22" y="44" width="8" height="8"></rect>
             <rect id="Rectangle-5" fill="#E6E6E6" filter="url(#filter-2)" sketch:type="MSShapeGroup" x="48" y="26" width="8" height="8"></rect>
             <rect id="Rectangle-7" fill="#E6E6E6" filter="url(#filter-3)" sketch:type="MSShapeGroup" x="8" y="12" width="8" height="8"></rect>

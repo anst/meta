@@ -2,7 +2,7 @@ function Fundamental(tags) {
 	this.tags = tags;
 }
 
-Fundamental.prototype.hasAction(action) {
+Fundamental.prototype.hasAction = function(action) {
 	for (key in tags) {
 		if (tags[key].hasAction(action)) {
 			return true;
@@ -11,7 +11,7 @@ Fundamental.prototype.hasAction(action) {
 	return false;
 }
 
- Fundamental.prototype.getAction(action) {
+ Fundamental.prototype.getAction = function(action) {
  	for (key in tags) {
  		if (tags[key].hasAction(action)) {
  			return tags[key].getAction(action);
