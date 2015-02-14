@@ -3,11 +3,41 @@
     <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
     <title>Vector 2</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.10477808 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.10477808 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.10477808 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <rect id="Rectangle-2" fill="#D8D8D8" sketch:type="MSShapeGroup" x="0" y="0" width="64" height="64"></rect>
-        <text id="wall?!" sketch:type="MSTextLayer" font-family="Helvetica" font-size="10" font-weight="bold" fill="#000000">
-            <tspan x="18" y="35">wall?!</tspan>
-        </text>
+        <g id="Wall" sketch:type="MSLayerGroup">
+            <rect id="Rectangle-2" fill="#BEBEBE" sketch:type="MSShapeGroup" x="0" y="0" width="64" height="64"></rect>
+            <rect id="Rectangle-8" fill="#E6E6E6" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="22" y="44" width="8" height="8"></rect>
+            <rect id="Rectangle-5" fill="#E6E6E6" filter="url(#filter-2)" sketch:type="MSShapeGroup" x="48" y="26" width="8" height="8"></rect>
+            <rect id="Rectangle-7" fill="#E6E6E6" filter="url(#filter-3)" sketch:type="MSShapeGroup" x="8" y="12" width="8" height="8"></rect>
+        </g>
     </g>
 </svg>
